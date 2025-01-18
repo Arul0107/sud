@@ -1,0 +1,84 @@
+/* Container Styling */
+.categories-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  /* Header Section */
+  .categories-header {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .categories-header h2 {
+    margin: 0;
+    color: #222; /* Darker text for header */
+  }
+  
+  .categories-header p {
+    font-size: 16px;
+    color: #666; /* Subtle gray for description */
+  }
+  
+  /* Card Styling */
+  .saree-card {
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .saree-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  .saree-card img {
+    object-fit: cover;
+    height: 450px;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  /* Card Meta (Title and Description) */
+  .saree-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #222;
+  }
+  
+  .saree-description {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  /* Price and Button Styling */
+  .saree-footer {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .saree-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #d48806; /* Accent color for price */
+  }
+  
+  .saree-button {
+    background-color: #d48806;
+    border: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 20px;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .saree-button:hover {
+    background-color: #bf7605;
+    color: white;
+  }
+  

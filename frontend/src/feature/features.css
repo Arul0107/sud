@@ -1,0 +1,61 @@
+.features-section {
+  background-color: #ffffff; /* Light background */
+  padding: 40px 0; /* Vertical padding */
+  text-align: center;
+  border-top: 1px solid #eaeaea; /* Top border */
+  width: 100%;
+  overflow: hidden;; /* Bottom border */
+}
+
+.feature-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  gap: 20px;
+}
+
+.feature-icon {
+  margin-bottom: 16px; /* Space below the icon */
+}
+hr {
+    width:90%; /* Width of the horizontal line */
+    margin: 20px auto; /* Centers the hr and adds vertical spacing */
+    border: none; /* Removes the default border */
+    height: 1px; /* Sets the thickness of the line */
+    background-color: #979393; /* Sets the color of the line */
+  }
+  
+.feature-icon-image {
+  width: 100px;
+  height: 100px;
+}
+
+.feature-title {
+  font-size: 18px; /* Title font size */
+  font-weight: 600; /* Bold font */
+  margin-bottom: 8px; /* Space below the title */
+  color: #000000;
+   /* Dark title color */
+}
+
+.feature-description {
+  font-size: 14px; /* Description font size */
+  color: #666666; /* Grey text color */
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .features-section {
+    padding: 20px 0; /* Reduce padding for smaller screens */
+  }
+
+  .feature-title {
+    font-size: 16px; /* Adjust title size for smaller screens */
+  }
+
+  .feature-description {
+    font-size: 12px; /* Adjust description size for smaller screens */
+  }
+}

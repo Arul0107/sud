@@ -1,0 +1,218 @@
+/* Container for the banner */
+.banner-container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Each slide */
+  .banner-slide {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: left;
+  }
+  
+  /* Image styling */
+  .banner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  
+  /* Content overlay */
+  .banner-content {
+    position: relative;
+    z-index: 1;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 8px;
+    top: 180px;
+    left: 120px;
+  }
+  
+  /* Title styling */
+  .banner-title {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #222;
+  }
+  
+  /* Subtitle styling */
+  .banner-subtitle {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    color: #555;
+  }
+  
+  /* Description text */
+  .banner-description {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #666;
+  }
+  
+  /* Buttons */
+  .banner-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .banner-button-primary {
+    background: #d89a6e;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  .banner-button-primary:hover {
+    background: #c6885e;
+  }
+  
+  .banner-button-secondary {
+    border: 1px solid #d89a6e;
+    color: #d89a6e;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  .banner-button-secondary:hover {
+    color: #c6885e;
+    border-color: #c6885e;
+  }
+  
+  /* Dots customization */
+  .custom-dots li {
+    margin: 0 5px;
+  }
+  
+  .custom-dots li button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #d18f8f;
+    border: none;
+  }
+  
+  .custom-dots li.slick-active button {
+    background: #d89a6e;
+  }
+  
+  /* Custom Navigation Buttons */
+  .carousel-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    color: #000000 !important;
+    border: none;
+    font-size: 24px;
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+  }
+  
+  .carousel-prev {
+    left: 20px;
+  }
+  
+  .carousel-next {
+    right: 20px;
+  }
+  
+  .carousel-nav:hover {
+    background:none !important;
+    color: #c6885e !important;
+  }
+  
+  /* ---------- Responsive Styles ---------- */
+  
+  /* For tablets (widths between 768px and 1024px) */
+  @media (max-width: 1024px) {
+    .banner-content {
+      top: 200px;
+      left: 60px;
+      max-width: 400px;
+    }
+  
+    .banner-title {
+      font-size: 36px;
+    }
+  
+    .banner-subtitle {
+      font-size: 18px;
+    }
+  
+    .banner-description {
+      font-size: 14px;
+    }
+  
+    .banner-button-primary,
+    .banner-button-secondary {
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+  }
+  
+  /* For mobile devices (widths less than 768px) */
+  @media (max-width: 768px) {
+    .banner-content {
+      top: 150px;
+      left: 20px;
+      max-width: 300px;
+    }
+  
+    .banner-title {
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+  
+    .banner-subtitle {
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+  
+    .banner-description {
+      font-size: 12px;
+      line-height: 1.4;
+    }
+  
+    .banner-button-primary,
+    .banner-button-secondary {
+      padding: 6px 12px;
+      font-size: 12px;
+    }
+  
+    .carousel-prev,
+    .carousel-next {
+      width: 30px;
+      height: 30px;
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+.slick-list{
+    background-color: #c6885e !important;
+}  
